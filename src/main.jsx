@@ -14,6 +14,7 @@ import AuthProvider from './provider/AuthProvider';
 import Login from './Pages/Login/Login';
 import SignIn from './Pages/SignIn/SignIn';
 import ErrorPage from './component/ErrorPage';
+import PerCardInfo from './component/PerCardInfo';
 
 const router = createBrowserRouter([
   {
@@ -44,6 +45,10 @@ const router = createBrowserRouter([
       {
         path:'/signup',
         element:<SignIn></SignIn>
+      },
+      {
+        path:'/card/:id',
+        element:<PerCardInfo></PerCardInfo>
       }
     ]
 
