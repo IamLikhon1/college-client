@@ -1,6 +1,7 @@
 
 const Admission = () => {
     return (
+        
         <div>
             
         </div>
