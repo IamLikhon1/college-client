@@ -11,11 +11,15 @@ import Colleges from './Pages/Colleges/Colleges';
 import Admission from './Pages/Admissions/Admission';
 import MyColleges from './Pages/MyColleges/MyColleges';
 import AuthProvider from './provider/AuthProvider';
+import Login from './Pages/Login/Login';
+import SignIn from './Pages/SignIn/SignIn';
+import ErrorPage from './component/ErrorPage';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element:<Main></Main>,
+    errorElement:<ErrorPage></ErrorPage>,
     children:[
       {
         path:'/',
@@ -32,6 +36,14 @@ const router = createBrowserRouter([
       {
         path:'/myCollege',
         element:<MyColleges></MyColleges>
+      },
+      {
+        path:'/login',
+        element:<Login></Login>
+      },
+      {
+        path:'/signup',
+        element:<SignIn></SignIn>
       }
     ]
 
