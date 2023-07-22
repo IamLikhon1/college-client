@@ -1,5 +1,6 @@
 import SearchButton from "../../../component/SearchButton";
 import Banner from "./Banner";
+import Features from "./Features";
 import Graduate from "./Graduate";
 import ThreeCard from "./ThreeCard";
 
@@ -11,6 +12,7 @@ const Home = () => {
             <Banner></Banner> 
             <ThreeCard></ThreeCard> 
             <Graduate></Graduate>   
+            <Features></Features>
         </div>
     );
 };
