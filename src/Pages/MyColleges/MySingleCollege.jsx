@@ -2,11 +2,22 @@ import { FaBook, FaCalendarAlt, FaPhone } from "react-icons/fa";
 import { AiOutlineMail } from "react-icons/ai";
 import { BiLocationPlus } from "react-icons/bi";
 import { Link } from "react-router-dom";
+import { useContext } from "react";
+import { AuthContext } from "../../provider/AuthProvider";
+import { toast } from "react-hot-toast";
 
 const MySingleCollege = ({singleCollege}) => {
-    const{address,date,email,name,number,subject}=singleCollege
+    const {user}=useContext(AuthContext);
+    const{address,date,email,name,number,subject}=singleCollege;
+    const handleReview=()=>{
+        if(!user){
+            toast.error('Invalid User Please Login first')
+           }
+    }
+
     return (
-        <div className="mt-8">
+        <div className="mt-8"data-aos="zoom-in"
+        data-aos-duration="2000">
             <div className="md:card w-full h-full bg-base-300 shadow-2xl hover:bg-sky-200 duration-500">
         <div className="card-body">
             <h2 className="card-title">Name : {name}</h2>
@@ -22,7 +33,7 @@ const MySingleCollege = ({singleCollege}) => {
                 <span className="flex items-center font-semibold gap-1">Subject: <span className="text-orange-500"><FaBook></FaBook></span>{subject}</span>
             </div>
             <div className="card-actions justify-end">
-            <Link to='/review'><button className="btn btn-primary">Review</button></Link>
+           {user?<Link to='/review'><button className="btn btn-primary">Review</button></Link>:<Link to='/login'><button onClick={handleReview} className="btn btn-primary">Review</button></Link>}
             </div>
         </div>
         </div>

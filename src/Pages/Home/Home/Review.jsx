@@ -11,7 +11,8 @@ const Review = () => {
     },[])
 
     return (
-        <div className='mx-10 my-20'>
+        <div className='mx-10 my-20'data-aos="zoom-in"
+        data-aos-duration="2000">
            <div className='flex items-center text-orange-500'>
            <span className='text-2xl mr-1'> <FaGraduationCap></FaGraduationCap></span>
             <h2 className="text-base uppercase font-semibold">testimonial.</h2>

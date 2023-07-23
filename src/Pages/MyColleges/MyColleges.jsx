@@ -18,7 +18,8 @@ const MyColleges = () => {
     },[url])
    
     return (
-        <div className="mx-10 my-20">
+        <div className="mx-10 my-20"data-aos="zoom-in"
+        data-aos-duration="2000">
            <div className="uppercase text-center mt-16">
           <span className=" flex justify-center items-center text-orange-500"> <FaGraduationCap></FaGraduationCap>  <h2 className="text-xl ml-2">your college</h2></span>
             <h2 className="text-4xl mt-4">my selected Information</h2>

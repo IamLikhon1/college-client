@@ -5,9 +5,11 @@ import { BsPeopleFill } from "react-icons/bs";
 const Features = () => {
     return (
         <div className="my-20 px-10 py-14 text-white bg-sky-950">
-            <div className='grid md:grid-cols-2 gap-5'>
+            <div className='grid md:grid-cols-2 gap-5' data-aos="zoom-in"
+           data-aos-duration="1000" >
                 {/* text */}
-                <div>
+                <div data-aos="zoom-in"
+           data-aos-duration="1500" >
                 <div className='flex items-center text-orange-500'>
            <span className='text-2xl mr-1'> <FaGraduationCap></FaGraduationCap></span>
             <h2 className="text-base uppercase font-semibold">BEst of best.</h2>
@@ -16,7 +18,8 @@ const Features = () => {
             <p className='my-5 font-medium'> Explore our diverse range of academic courses, designed to provide comprehensive knowledge and practical skills in various disciplines.</p>
             {/* one */}
             
-            <div className='flex'>
+            <div className='flex'data-aos="zoom-in"
+           data-aos-duration="2000" >
                <div className=''> 
                <span className='text-4xl text-orange-500'><BsPeopleFill></BsPeopleFill></span></div>
                 <div className='ml-10'>
@@ -27,7 +30,8 @@ const Features = () => {
             {/* one */}
             {/* two */}
 
-            <div className='flex'>
+            <div className='flex'data-aos="zoom-in"
+           data-aos-duration="2000" >
                <div className=''> 
                <span className='text-4xl text-orange-500'><FaBitcoin></FaBitcoin></span></div>
                 <div className='ml-10'>
@@ -39,7 +43,8 @@ const Features = () => {
 
             {/* three */}
 
-            <div className='flex'>
+            <div className='flex'data-aos="zoom-in"
+           data-aos-duration="2000" >
                <div className=''> 
                <span className='text-4xl text-orange-500'><FaReact></FaReact></span></div>
                 <div className='ml-10'>
@@ -53,8 +58,9 @@ const Features = () => {
                 {/* text */}
 
                 {/* img */}
-                <div className='h-full'>
-                    <img className='h-full' src="https://img.freepik.com/free-photo/brunette-business-woman-with-wavy-long-hair-blue-eyes-stands-holding-notebook-hands_197531-343.jpg?w=360&t=st=1690021905~exp=1690022505~hmac=d9e93a550e4522b33c11e75f4afd6a1ccc3864d1faabc1d7b962ea4c898d2d3f" alt="" />
+                <div className='h-full'data-aos="zoom-in"
+           data-aos-duration="3000" >
+                    <img className='h-full rounded-xl' src="https://img.freepik.com/premium-photo/vertical-portrait-young-man-wearing-graduation-hat-holding-diploma-while-posing-against-greenery-outdoors_236854-30329.jpg?w=360" alt="" />
                 </div>
                 {/* img */}
             </div>

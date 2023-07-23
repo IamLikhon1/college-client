@@ -38,12 +38,16 @@ const Admission = () => {
         <div className="">
               <div className='bg-sky-900 py-10 text-white'>
              
-                    <div className='flex justify-center items-center'>
+                    <div className='flex justify-center items-center'data-aos="zoom-in"
+           data-aos-duration="2000">
                        <span className='text-5xl text-orange-500'> <FaGraduationCap></FaGraduationCap></span>
-                    <h2 className="text-3xl text-center my-5 font-semibold ml-2 uppercase">Admission</h2>
+                    <h2 className="text-3xl text-center my-5 font-semibold ml-2 uppercase"data-aos="zoom-in"
+           data-aos-duration="2000">Admission</h2>
                   </div>
-                  <p className="mb-5 text-center md:px-28">Admissions crucial for future education. Opportunities, courses, faculty, resources assessed. Timely preparation and documentation vital. Choose wisely. Plan ahead.</p>
-                    <form onSubmit={handleSubmit} className="mx-10">
+                  <p className="mb-5 text-center md:px-28"data-aos="zoom-in"
+           data-aos-duration="2000">Admissions crucial for future education. Opportunities, courses, faculty, resources assessed. Timely preparation and documentation vital. Choose wisely. Plan ahead.</p>
+                    <form onSubmit={handleSubmit} className="mx-10"data-aos="zoom-in"
+           data-aos-duration="3000">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="form-control">
                 <label className="label">

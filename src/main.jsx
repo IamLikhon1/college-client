@@ -49,7 +49,8 @@ const router = createBrowserRouter([
       },
       {
         path:'/card/:id',
-        element:<PerCardInfo></PerCardInfo>
+        element:<PerCardInfo></PerCardInfo>,
+        loader:({params})=>fetch(`http://localhost:5000/threeCard/${params.id}`)
       },
       {
         path:'/review',
