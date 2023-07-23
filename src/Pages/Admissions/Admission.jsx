@@ -1,3 +1,4 @@
+import { toast } from 'react-hot-toast';
 import { FaGraduationCap } from 'react-icons/fa';
 
 const Admission = () => {
@@ -13,6 +14,20 @@ const Admission = () => {
         const file=form.file.value;
 
         const allInfo={name,subject,email,number,address,date,file}
+        
+        fetch('http://localhost:5000/addPost',{
+            method:'POST',
+            headers:{
+                'content-type':'application/json'
+            },
+            body:JSON.stringify(allInfo)
+        })
+        .then(res=>res.json())
+        .then(data=>{
+            if(data.insertedId){
+                toast.success('Your Applications Submitted DOne')
+            }
+        })
 
         console.log(allInfo)
 
