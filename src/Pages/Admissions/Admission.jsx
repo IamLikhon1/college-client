@@ -7,7 +7,7 @@ const Admission = () => {
         const form=event.target;
         const name=form.name.value;
         const subject=form.subject.value;
-        const email=form.subject.value
+        const email=form.email.value
         const number=form.number.value;
         const address=form.address.value;
         const date=form.date.value;
@@ -25,7 +25,8 @@ const Admission = () => {
         .then(res=>res.json())
         .then(data=>{
             if(data.insertedId){
-                toast.success('Your Applications Submitted DOne')
+                toast.success('Your Applications Submitted Done')
+                form.reset()
             }
         })
 

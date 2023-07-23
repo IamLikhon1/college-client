@@ -6,7 +6,6 @@ const SingleColleges = ({single}) => {
         toast.success('Coming sooon')
     }
     const{admission_date,college_image,college_name,college_rating,research_count}=single
-    console.log(single)
     return (
         <div className="mt-16">
                     <div className="card w-full bg-base-100 shadow-xl">
