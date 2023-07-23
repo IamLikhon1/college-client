@@ -15,6 +15,7 @@ import Login from './Pages/Login/Login';
 import SignIn from './Pages/SignIn/SignIn';
 import ErrorPage from './component/ErrorPage';
 import PerCardInfo from './component/PerCardInfo';
+import ReviewApi from './component/ReviewApi';
 
 const router = createBrowserRouter([
   {
@@ -49,6 +50,10 @@ const router = createBrowserRouter([
       {
         path:'/card/:id',
         element:<PerCardInfo></PerCardInfo>
+      },
+      {
+        path:'/review',
+        element:<ReviewApi></ReviewApi>
       }
     ]
 

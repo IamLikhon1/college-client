@@ -14,7 +14,6 @@ const MyColleges = () => {
         .then(res=>res.json())
         .then(data=>{
             setMyCollege(data) 
-            console.log(data)  
         })
     },[url])
    

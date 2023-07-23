@@ -36,13 +36,13 @@ const Admission = () => {
     return (
         
         <div className="">
-              <div className='bg-sky-700 p-5 text-white'>
+              <div className='bg-sky-900 py-10 text-white'>
              
                     <div className='flex justify-center items-center'>
                        <span className='text-5xl text-orange-500'> <FaGraduationCap></FaGraduationCap></span>
-                    <h2 className="text-4xl text-center my-5 font-semibold ml-2">Admission</h2>
-
-                    </div>
+                    <h2 className="text-3xl text-center my-5 font-semibold ml-2 uppercase">Admission</h2>
+                  </div>
+                  <p className="mb-5 text-center md:px-28">Admissions crucial for future education. Opportunities, courses, faculty, resources assessed. Timely preparation and documentation vital. Choose wisely. Plan ahead.</p>
                     <form onSubmit={handleSubmit} className="mx-10">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="form-control">
@@ -93,7 +93,7 @@ const Admission = () => {
                 <label className="label">
                     <span className="label-text text-white">Image Field</span>
                 </label>
-            <input type="file" name="file"  className="" required />
+            <input type="file" name="file"  className="file-input file-input-bordered w-full max-w-xs text-black" required />
 
             </div>
             
