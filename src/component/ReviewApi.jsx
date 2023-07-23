@@ -29,7 +29,7 @@ const ReviewApi = () => {
   return (
     <div className="my-10 mx-10">
       <h2 className="uppercase text-center text-3xl mt-14 mb-10">Please Give Us Some review</h2>
-      <div className="bg-gray-100 px-10 py-20 rounded-xl h-full mx-auto shadow-2xl md:w-1/2 mb-16">
+      <div className="bg-gray-300 px-10 py-20 rounded-xl h-full mx-auto shadow-2xl md:w-1/2 mb-16">
 
      <form onSubmit={handleReview}>
      <div className="form-control w-full">

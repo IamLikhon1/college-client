@@ -7,7 +7,7 @@ const MySingleCollege = ({singleCollege}) => {
     const{address,date,email,name,number,subject}=singleCollege
     return (
         <div className="mt-8">
-            <div className="md:card w-full h-full bg-base-300 shadow-2xl">
+            <div className="md:card w-full h-full bg-base-300 shadow-2xl hover:bg-sky-200 duration-500">
         <div className="card-body">
             <h2 className="card-title">Name : {name}</h2>
             <div className="md:flex gap-3 my-5">
