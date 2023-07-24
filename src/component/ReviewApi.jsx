@@ -11,7 +11,7 @@ const ReviewApi = () => {
     const message=form.message.value;
     const allReview={name,email,message};
     console.log(allReview);
-    fetch('http://localhost:5000/addReview',{
+    fetch('https://college-server-eta.vercel.app/addReview',{
       method:'POST',
       headers:{
         'content-type':'application/json'
