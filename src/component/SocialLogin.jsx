@@ -13,7 +13,7 @@ const SocialLogin = () => {
         googleSingIn()
         .then(result=>{
             const loggedInUser=result.user
-            console.log(loggedInUser)
+            // console.log(loggedInUser)
             toast.success(`Welcome ${loggedInUser?.displayName} You successfully Continue with Google`)
             navigate(from,{replace:true})
 

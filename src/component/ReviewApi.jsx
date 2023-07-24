@@ -62,7 +62,7 @@ const ReviewApi = () => {
     
     </div>
 
-    <button type="submit" className="btn bg-[#ff4d89] hover:bg-[#ff4d89] text-white mt-5">Submit</button>
+    <button type="submit" className="btn rounded-xl bg-[#ff4d89] hover:bg-[#ff4d89] text-white mt-5">Submit</button>
             
      </form>
 

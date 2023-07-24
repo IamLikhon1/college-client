@@ -27,7 +27,7 @@ const SingleColleges = ({single}) => {
                 </div>
             </div>
             <div className="card-actions justify-end">
-            <button onClick={DetailsBtn} className="btn  bg-[#ff4d89] hover:bg-[#ff4d89] text-white">Details</button>
+            <button onClick={DetailsBtn} className="btn rounded-xl  bg-[#ff4d89] hover:bg-[#ff4d89] text-white  ">Details</button>
             </div>
         </div>
         </div>  

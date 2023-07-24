@@ -1,5 +1,6 @@
 import SearchButton from "../../../component/SearchButton";
 import Banner from "./Banner";
+import Education from "./Education";
 import Features from "./Features";
 import Graduate from "./Graduate";
 import NewsLetter from "./NewsLetter";
@@ -15,6 +16,7 @@ const Home = () => {
             <ThreeCard></ThreeCard> 
             <Graduate></Graduate>   
             <Features></Features>
+            <Education></Education>
             <Review></Review>
             <NewsLetter></NewsLetter>
         </div>

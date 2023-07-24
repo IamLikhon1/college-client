@@ -22,7 +22,7 @@ const NavBar = () => {
 
             <li className="text-base"> <Link to='/myCollege'>My College</Link> </li>
 
-           {user?<li onClick={handleLogout} className="ml-3 btn  bg-[#ff4d89] hover:bg-[#ff4d89] text-white hover:rounded-xl"> Log Out</li>:<li className="ml-3 btn btn-secondary"> <Link to='/login'>Login</Link> </li>}
+           {user?<li onClick={handleLogout} className="ml-3 btn  bg-[#ff4d89] hover:bg-[#ff4d89] text-white rounded-xl hover:rounded-2xl"> Log Out</li>:<li className="ml-3 btn btn-info rounded-xl "> <Link to='/login'>Login</Link> </li>}
    
     
     

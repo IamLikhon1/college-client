@@ -19,7 +19,7 @@ const NewsLetter = () => {
                     <div className="form-control w-full ">
                     <input type="text" placeholder="Email Address..." className="input input-bordered w-full text-black " />
                     </div>
-                    <button className="btn my-5 md:my-0 bg-[#ff4d89] hover:bg-[#ff4d89] text-white ml-1">Subscribe</button>
+                    <button className="btn rounded-xl my-5 md:my-0 bg-[#ff4d89] hover:bg-[#ff4d89] text-white ml-1">Subscribe</button>
                     </div>
 
 

@@ -48,19 +48,19 @@ const SignIn = () => {
             <div className="my-16 md:px-10">
             <div className="grid md:grid-cols-2 items-center">
                {/* animation */}
-               <div className="w-full">
-                <img src="https://img.freepik.com/free-vector/sign-up-concept-illustration_114360-7865.jpg?w=740&t=st=1690003854~exp=1690004454~hmac=498be7842df91ac09de58eab66e40bef12487d2b933a68dfe87f79f003934cfc" alt="" />
+               <div className="w-full h-full shadow-sm">
+                <img className="h-full" src="https://img.freepik.com/premium-vector/online-registration-illustration-design-concept-websites-landing-pages-other_108061-939.jpg?w=740" alt="" />
 
                     
                 </div>
                {/* animation */}
                {/* from */}
 
-               <div className="w-full">
+               <div className="w-full h-full">
                <div className="hero min-h-screen">
   <div className="hero-content flex-col ">
     <div className="text-center">
-      <h1 className="text-4xl font-bold text-[#F63E7B] uppercase">Sign in</h1>
+      <h1 className="text-4xl font-bold text-[#F63E7B] uppercase">Sign Up</h1>
       
     </div>
     <div className="card md:w-96  shadow-2xl bg-base-100">
@@ -93,7 +93,7 @@ const SignIn = () => {
           
         </div>
         <div className="form-control mt-6">
-          <button type="submit" className="btn bg-[#F63E7B] hover:bg-[#F63E7B] text-white uppercase">Sign in</button>
+          <button type="submit" className="btn rounded-xl bg-[#F63E7B] hover:bg-[#F63E7B] text-white uppercase">Sign in</button>
 
         </div>
      </form>

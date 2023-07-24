@@ -35,7 +35,7 @@ const SingleCard = ({item}) => {
     <div className="card-actions justify-end">
     
     { user?
-      <Link to={`/card/${_id}`} className=''><button className="btn text-white bg-[#ff4d89] hover:bg-[#F63E7B]">Details</button></Link>:<Link to='/login'><button onClick={handleDetails} className="btn text-white bg-[#ff4d89] hover:bg-[#F63E7B]">Details</button></Link>}
+      <Link to={`/card/${_id}`} className=''><button className="btn rounded-xl text-white bg-[#ff4d89] hover:bg-[#F63E7B]">Details</button></Link>:<Link to='/login'><button onClick={handleDetails} className="btn text-white rounded-xl bg-[#ff4d89] hover:bg-[#F63E7B]">Details</button></Link>}
     </div>
   </div>
 </div>

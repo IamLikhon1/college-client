@@ -33,7 +33,7 @@ const MySingleCollege = ({singleCollege}) => {
                 <span className="flex items-center font-semibold gap-1">Subject: <span className="text-orange-500"><FaBook></FaBook></span>{subject}</span>
             </div>
             <div className="card-actions justify-end">
-           {user?<Link to='/review'><button className="btn bg-[#ff4d89] hover:bg-[#ff4d89] text-white">Review</button></Link>:<Link to='/login'><button onClick={handleReview} className="btn bg-[#ff4d89] hover:bg-[#ff4d89] text-white">Review</button></Link>}
+           {user?<Link to='/review'><button className="btn rounded-xl bg-[#ff4d89] hover:bg-[#ff4d89] text-white">Review</button></Link>:<Link to='/login'><button onClick={handleReview} className="btn rounded-xl bg-[#ff4d89] hover:bg-[#ff4d89] text-white">Review</button></Link>}
             </div>
         </div>
         </div>

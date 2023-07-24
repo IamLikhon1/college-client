@@ -50,8 +50,8 @@ const Login = () => {
         <div className="my-16 md:px-10">
             <div className="grid md:grid-cols-2 items-center">
                {/* animation */}
-               <div className="w-full">
-                <img src="https://img.freepik.com/free-vector/sign-concept-illustration_114360-5267.jpg?w=740&t=st=1690003780~exp=1690004380~hmac=a140681f149a7fd0680a7b022627d253ea31c852365c989ed65cf8723fda0b13" alt="" />
+               <div className="w-full h-full ">
+                <img className="w-full h-full shadow-sm" src="https://img.freepik.com/free-vector/computer-login-concept-illustration_114360-7892.jpg?w=740&t=st=1690198719~exp=1690199319~hmac=eb8be416e7977a0b381b469eb1e2c685471a4fb86fe4df3d141a588034178f44" alt="" />
             
 
                     
@@ -63,7 +63,7 @@ const Login = () => {
                <div className="hero min-h-screen">
   <div className="hero-content flex-col ">
     <div className="text-center">
-      <h1 className="text-4xl font-bold uppercase text-[#F63E7B]">Sign in</h1>
+      <h1 className="text-4xl font-bold uppercase text-[#F63E7B]">Login</h1>
       
     </div>
     <div className="card md:w-96  shadow-2xl bg-base-100">
@@ -85,7 +85,7 @@ const Login = () => {
           </label>
         </div>
         <div className="form-control mt-6">
-          <button type="submit" className="btn bg-[#F63E7B] hover:bg-[#F63E7B] text-white">Login</button>
+          <button type="submit" className="btn rounded-xl bg-[#F63E7B] hover:bg-[#F63E7B] text-white">Login</button>
 
         </div>
         </form>
