@@ -22,7 +22,20 @@ const NavBar = () => {
 
             <li className="text-base"> <Link to='/myCollege'>My College</Link> </li>
 
+        
+            { user? <>
+                <span className="flex items-center">
+                <p className="text-sm text-[#ff4d89] mr-2 cursor-pointer"> {user?.displayName} </p>
+                <p><img className="w-10 h-10 rounded-full mr-10" src={user?.photoURL} alt="" /></p>
+                 
+                </span>
+                 </>
+                 :
+                 <></>}
+
            {user?<li onClick={handleLogout} className="ml-3 btn  bg-[#ff4d89] hover:bg-[#ff4d89] text-white rounded-xl hover:rounded-2xl"> Log Out</li>:<li className="ml-3 btn btn-info rounded-xl "> <Link to='/login'>Login</Link> </li>}
+
+          
    
     
     
@@ -40,7 +53,7 @@ const NavBar = () => {
         </ul>
     </div>
    <span className="text-4xl text-orange-400 ml-8"> <FaGraduationCap></FaGraduationCap></span>
-    <Link to='/'> <span className="btn btn-ghost text-base md:text-2xl items-center text-black">Collegiate<span className="text-orange-500">Nexus</span></span></Link>
+    <Link to='/'> <span className="btn btn-ghost text-base md:text-xl items-center text-black">Collegiate<span className="text-orange-500">Nexus</span></span></Link>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">

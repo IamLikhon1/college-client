@@ -10,7 +10,7 @@ const NewsLetter = () => {
 
                     <div>
                         <div className="w-full">
-                            <h2 className="text-5xl space-y-3">Subscribe For Newsletter</h2>
+                            <h2 className="text-4xl space-y-3">Subscribe For Newsletter</h2>
                             <h4 className="text-base mt-3">Manage Your Business With Our Software</h4>
                         </div>
                     </div>
