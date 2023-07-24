@@ -1,7 +1,11 @@
+import { useContext } from 'react';
 import { toast } from 'react-hot-toast';
 import { FaGraduationCap } from 'react-icons/fa';
+import { AuthContext } from '../../provider/AuthProvider';
+import { Link } from 'react-router-dom';
 
 const Admission = () => {
+    const {user}=useContext(AuthContext)
     const handleSubmit=(event)=>{
         event.preventDefault();
         const form=event.target;
@@ -32,6 +36,9 @@ const Admission = () => {
 
         console.log(allInfo)
 
+    }
+    const submitHandle=()=>{
+        toast.error('Invalid User Please Login First')
     }
     return (
         
@@ -104,7 +111,7 @@ const Admission = () => {
                 </div>
             <div className="form-control mt-6">
                 
-            < input type="submit" className="btn btn-neutral btn-block mt-4" value="Submit" />
+           {user?< input type="submit" className="btn btn-neutral btn-block mt-4" value="Submit" />:<Link to='/login'>< input onClick={submitHandle} type="submit" className="btn btn-neutral btn-block mt-4" value="Submit" /></Link>}
             </div>
                     </form>
             <div className="card-body">

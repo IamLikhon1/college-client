@@ -1,4 +1,5 @@
 import { toast } from "react-hot-toast";
+import { FaHeart } from "react-icons/fa";
 
 const ReviewApi = () => {
 
@@ -28,7 +29,12 @@ const ReviewApi = () => {
   }
   return (
     <div className="my-10 mx-10">
-      <h2 className="uppercase text-center text-3xl mt-14 mb-10">Please Give Us Some review</h2>
+      <h2 className="uppercase text-3xl mt-14 mb-10 flex justify-center items-center">
+        <span className="mr-5 text-[#ff4d89]"><FaHeart></FaHeart></span>
+        <span> Please Give Us Some review</span>
+        <span className="ml-4 text-[#ff4d89]"><FaHeart></FaHeart></span>
+
+        </h2>
       <div className="bg-gray-300 px-10 py-20 rounded-xl h-full mx-auto shadow-2xl md:w-1/2 mb-16">
 
      <form onSubmit={handleReview}>
@@ -56,7 +62,7 @@ const ReviewApi = () => {
     
     </div>
 
-    <button type="submit" className="btn btn-accent mt-5">Submit</button>
+    <button type="submit" className="btn bg-[#ff4d89] hover:bg-[#ff4d89] text-white mt-5">Submit</button>
             
      </form>
 

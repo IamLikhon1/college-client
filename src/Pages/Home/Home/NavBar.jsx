@@ -22,14 +22,14 @@ const NavBar = () => {
 
             <li className="text-base"> <Link to='/myCollege'>My College</Link> </li>
 
-           {user?<li onClick={handleLogout} className="ml-3 btn btn-warning hover:rounded-xl"> Log Out</li>:<li className="ml-3 btn btn-secondary"> <Link to='/login'>Login</Link> </li>}
+           {user?<li onClick={handleLogout} className="ml-3 btn  bg-[#ff4d89] hover:bg-[#ff4d89] text-white hover:rounded-xl"> Log Out</li>:<li className="ml-3 btn btn-secondary"> <Link to='/login'>Login</Link> </li>}
    
     
     
     </>
     return (
         <>
-            <div className="navbar bg-base-100 shadow-xl">
+            <div className="navbar bg-base-200 shadow-2xl">
   <div className="navbar-start">
     <div className="dropdown">
       <label tabIndex={0} className="btn btn-ghost lg:hidden">
